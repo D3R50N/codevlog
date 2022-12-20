@@ -2,38 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lib/css/font-awesome.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Arch</title>
-    
+
+    <link rel="stylesheet" href="lib/css/font-awesome.css" />
+    <!-- <link rel="stylesheet" href="lib/css/argon.css"> -->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/popper.min.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="text-light">
-            Arch
-        </h1>
-        <a href="https://github.com/D3R50N" target="_blank">
-            <h3 class="text-light">
-                Max Dev
-                <i class="fa fa-github"></i>
-            </h3>
+    <nav id="navbar-main" class="navbar navbar-dark navbar-main navbar-expand-lg navbar-transparent py-2">
+        <a class="brand mr-4" href="#">
+            <div class="font-weight-bold text-capitalize text-light h3">
+                Brain<span class="color-2">Z</span>
+            </div>
         </a>
-    </div>
-    
-    
+        <ul class="nav justify-content-center">
+            <li class="nav-item fwl">
+                <div class="dropdown open">
+                    <a id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        ML Programs
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="triggerId">
+                        <button class="dropdown-item text-light bg-dark" href="#">Number comparators</button>
+                        <button class="dropdown-item text-light bg-dark" href="#">Pathfinding</button>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item fwl">
+                <a class="nav-link" href="#">
+                    Settings
+
+                </a>
+            </li>
+            <li class="nav-item fwl">
+                <a class="nav-link" href="#">
+                    Help
+
+                </a>
+            </li>
+
+        </ul>
+
+
+
+
+        <ul class="nav icon-nav justify-content-center ml-auto">
+            <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="mailto:happydev.229@gmail.com" target="_blank"
+                    data-toggle="tooltip" title="Send me a mail">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="https://www.instagram.com/_an.derson" target="_blank"
+                    data-toggle="tooltip" title="Follow me on Instagram">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="https://twitter.com/_maxdev" target="_blank"
+                    data-toggle="tooltip" title="Follow me on Twitter">
+                    <i class="fa fa-twitter-square"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="https://github.com/D3R50N" target="_blank" data-toggle="tooltip"
+                    title="Star this project on Github">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <script src="config/setup.js"></script>
     <script src="config/app.config"></script>
 
-
-
     <script src="main.js"></script>
-    
 </body>
 
 </html>

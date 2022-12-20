@@ -1,5 +1,12 @@
 :root {
-    --col: rgba(250, 250, 250, 0.806);
+    --col: rgba(255, 255, 255, 0.806);
+    --col-2-val: 90, 212, 112;
+    --col-2: rgb(var(--col-2-val));
+}
+
+@font-face {
+    font-family: "Alexandria";
+    src: url("./assets/fonts/Alexandria.ttf");
 }
 
 body {
@@ -8,14 +15,14 @@ body {
 }
 
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Alexandria";
     font-weight: 600;
     margin: 0;
 }
 
 
-.text-light {
-    color: rgba(255, 255, 255, 0.869);
+.light {
+    color: var(--col) !important;
 }
 
 
@@ -98,4 +105,113 @@ input:focus::selection {
 .header h1 {
     width: 100%;
 
+}
+
+.color-2 {
+    color: var(--col-2);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 10px !important;
+    margin: 20px 4% !important;
+    border-radius: 10px;
+    transition-duration: .5s;
+    background: linear-gradient(-45deg, rgba(var(--col-2-val), .5) 0%, rgba(136, 154, 255, 0.553) 100%);
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px !important;
+    margin: 0 !important;
+
+    border-radius: 10px;
+    transition-duration: .5s;
+
+
+}
+
+.icon-nav {
+    background: linear-gradient(45deg, rgba(var(--col-2-val), .5) 0%, rgba(6, 10, 31, 0) 100%);
+    margin-left: auto !important;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px !important;
+}
+
+.brand .h3 {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.brand i {
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: smaller;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.nav .nav-item {
+    margin: 0px !important;
+
+}
+
+.nav .nav-item a {
+    text-decoration: none;
+    transition-duration: 0.5s;
+    /* margin: 20px; */
+    color: var(--col) !important;
+    margin: 0px !important;
+}
+
+.icon-nav .nav-item a:hover {
+    color: #fff !important;
+    transform: scale(1.4);
+}
+
+
+.navbar {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    transition-duration: .5s;
+}
+
+.navbar:hover {
+    background-color: rgba(var(--col-2-val), 0.004);
+}
+
+.dropdown-menu {
+    padding: 10px !important;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px !important;
+    transition-duration: 0.2s;
+    color: var(--col) !important;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: rgba(var(--col-2-val),1) !important;
+    background: transparent !important;
+}
+
+.nav-item.fwl a{
+    font-weight: 500;
+    color: white !important;
 }
