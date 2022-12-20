@@ -41,9 +41,33 @@ body::-webkit-scrollbar-thumb {
 body {
     background-color: var(--bg);
     padding: 0;
+    padding-top: 20px !important;
     scrollbar-width: thin;
     scrollbar-color: dark !important;
 
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center;
+    padding: 10px !important;
+    margin: 10px 4% !important;
+    border-radius: 10px;
+    transition-duration: .5s;
+    background: linear-gradient(-45deg, rgba(var(--col-2-val), .5) 0%, rgba(136, 154, 255, 0.553) 100%);
+
+    z-index: 99;
+}
+
+.nav-wrapper {
+    position: sticky;
+    top: 0;
+    padding-top: 1px;
+    background: var(--bg) !important;
+    margin: 0 !important;
+    z-index: 99;
 }
 
 
@@ -151,28 +175,6 @@ input:focus::selection {
     color: var(--col-2);
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center !important;
-    align-items: center;
-    padding: 10px !important;
-    margin: 20px 4% !important;
-    border-radius: 10px;
-    transition-duration: .5s;
-    background: linear-gradient(-45deg, rgba(var(--col-2-val), .5) 0%, rgba(136, 154, 255, 0.553) 100%);
-
-    z-index: 99;
-}
-
-.nav-wrapper {
-    position: sticky;
-    top: 0;
-    padding-top: 10px;
-    background: var(--bg) !important;
-    margin: 0 !important;
-    z-index: 99;
-}
 
 .nav {
     display: flex;
