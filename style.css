@@ -9,6 +9,17 @@
     src: url("./assets/fonts/Alexandria.ttf");
 }
 
+@font-face {
+    font-family: "Rubik";
+    src: url("./assets/fonts/RubikGlitch.ttf");
+}
+
+@font-face {
+    font-family: "Marhey";
+    src: url("./assets/fonts/Marhey.ttf");
+}
+
+
 body {
     background-color: #16161D;
     padding: 0;
@@ -149,6 +160,11 @@ input:focus::selection {
     justify-content: space-between;
     align-items: center;
     padding: 10px !important;
+    font-family: "Marhey";
+}
+
+.brand span {
+    font-family: "Rubik";
 }
 
 .brand .h3 {
@@ -207,11 +223,11 @@ input:focus::selection {
 }
 
 .dropdown-menu .dropdown-item:hover {
-    color: rgba(var(--col-2-val),1) !important;
+    color: rgba(var(--col-2-val), 1) !important;
     background: transparent !important;
 }
 
-.nav-item.fwl a{
+.nav-item.fwl a {
     font-weight: 500;
     color: white !important;
 }
