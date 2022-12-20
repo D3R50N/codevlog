@@ -1,5 +1,5 @@
 <img class="img-center"
-    src="https://readme-typing-svg.demolab.com?font=Alexandria&weight=900&size=70&pause=500&color=00B685&center=true&vCenter=true&multiline=true&repeat=false&width=1500&height=200&lines=Intelligent+programs+made+with+brain.js+;%24%7B%F0%9F%A4%96%7D"
+    src="https://readme-typing-svg.demolab.com?font=Alexandria&weight=900&size=70&pause=500&color=00B685&center=true&vCenter=true&multiline=true&repeat=false&width=1500&height=200&lines=<%=__('typed text').split(' ').join('+')%>+;%24%7B%F0%9F%A4%96%7D"
     alt="Typing SVG" />
 
 <div class="container">
@@ -16,8 +16,12 @@
                                     is more simple and regular than that of the individual</p>
                                 <div>
                                     <button type="button" class="btn btn-primary me-2"
-                                        >Email Us</button>
-                                    <button type="button" class="btn btn-success">Send us a tweet</button>
+                                        >
+                                    <%= __('no account')%>
+                                    </button>
+                                    <button type="button" class="btn btn-success">
+                                        <%= __('login')%>
+                                    </button>
                                 </div>
                             </div>
                         </div>

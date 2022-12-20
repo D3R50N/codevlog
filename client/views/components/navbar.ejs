@@ -11,7 +11,7 @@
             <li class="nav-item fwl">
                 <div class="dropdown open">
                     <a id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                        ML Programs
+                        <%= __("ml programs")%>
                         <i class="fa fa-angle-down"></i>
                     </a>
                     <div class="dropdown-menu vw-100 bg-dark" aria-labelledby="triggerId">
@@ -44,13 +44,12 @@
 
             <li class="nav-item fwl">
                 <a class="nav-link" href="#">
-                    Settings
+                    <%= __("settings")%>
                 </a>
             </li>
             <li class="nav-item fwl">
                 <a class="nav-link" href="#">
-                    Help
-
+                    <%= __("help")%>
                 </a>
             </li>
 
@@ -59,26 +58,31 @@
         <ul class="nav icon-nav justify-content-center ml-auto">
             <li class="nav-item">
                 <a class="nav-link nav-link-icon" href="mailto:happydev.229@gmail.com" target="_blank"
-                    data-toggle="tooltip" title="Send me a mail">
+                    data-toggle="tooltip" title="<%= __('send me mail')%>">
                     <i class="fa fa-envelope"></i>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-link-icon" href="https://www.instagram.com/aaanh_derson" target="_blank"
-                    data-toggle="tooltip" title="Follow me on Instagram">
+                    data-toggle="tooltip" title="<%= __('follow me on insta')%>">
                     <i class="fa fa-instagram"></i>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-link-icon" href="https://twitter.com/_maxdev" target="_blank"
-                    data-toggle="tooltip" title="Follow me on Twitter">
+                    data-toggle="tooltip" title="<%= __('follow me on twitter')%>">
                     <i class="fa fa-twitter-square"></i>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-link-icon" href="https://github.com/D3R50N" target="_blank" data-toggle="tooltip"
-                    title="Star this project on Github">
+                    title="<%= __('follow me on github')%>">
                     <i class="fa fa-github"></i>
+                </a>
+            </li>
+            <li class="nav-ite" style="color: var(--col); cursor: pointer;">
+                <a href="/<%=__('alt lang')%>" class="nav-link nav-link-icon" style="color: var(--col);">
+                  <%=__('alt lang').toUpperCase()%>
                 </a>
             </li>
         </ul>
