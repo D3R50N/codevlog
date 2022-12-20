@@ -31,10 +31,14 @@
     position: relative;
     z-index: 1;
     transition-duration: .5s;
+
 }
 
-.counter__item:hover{
+.counter__item:hover {
     scale: 1.3;
+    z-index: 2;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.318);
+
 }
 
 

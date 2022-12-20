@@ -195,6 +195,13 @@ input:focus::selection {
     margin-left: auto !important;
 }
 
+a.brand {
+    transition-duration: .2s;
+}a.brand:hover {
+    text-decoration: none !important;
+    scale: .9;
+}
+
 .brand {
     display: flex;
     flex-direction: row;
