@@ -1,8 +1,8 @@
 .counter {
     background: #10002800;
-    height: 600px;
+    /* height: 600px; */
     padding-top: 300px;
-    overflow: hidden;
+    overflow: visible;
 
     transform: scale(.8);
 }

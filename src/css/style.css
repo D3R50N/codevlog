@@ -53,6 +53,17 @@ body {
     margin: 0;
 }
 
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--bg);
+    background: var(--col-2);
+}
+
+::selection {
+    color: var(--bg);
+    background: var(--col-2);
+}
+
 
 .light {
     color: var(--col) !important;
