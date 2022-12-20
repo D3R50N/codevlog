@@ -125,7 +125,7 @@ input:focus::selection {
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center !important;
     align-items: center;
     padding: 10px !important;
     margin: 20px 4% !important;
@@ -230,4 +230,10 @@ input:focus::selection {
 .nav-item.fwl a {
     font-weight: 500;
     color: white !important;
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
