@@ -4,24 +4,35 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const appConfig = require('./app.config');
 
-const { log, error, warn } = require("console");
+const fs = require('fs');
+const {
+    log,
+    error,
+    clear,
+    warn
+} = require("console");
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(cookieParser());
-app.use(express.static("./client/public"))
+app.use(express.static(__dirname + "/client/public"))
 app.set("views", "./client/views/")
-app.set("view engine","ejs")
+app.set("view engine", "ejs")
 
 
 app.listen(appConfig.port, (err) => {
+    clear();
     if (err) error('Error when starting server');
     else
         log(`Server on http://localhost:${appConfig.port}`);
 })
 
 app.get("/", (req, res) => {
-    res.render('index.ejs');
+    res.render('index');
+
 })
+
