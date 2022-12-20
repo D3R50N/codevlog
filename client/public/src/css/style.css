@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    /* background: rgba(var(--col-2-val), .8); */
+    background: rgba(var(--col-2-val), .0);
 }
 
 body::-webkit-scrollbar-thumb {
