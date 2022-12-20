@@ -1,7 +1,9 @@
 :root {
     --col: rgba(255, 255, 255, 0.806);
-    --col-2-val: 90, 212, 112;
+    --col-2-val: 0, 182, 133;
     --col-2: rgb(var(--col-2-val));
+    --col-3: #00FFFF;
+    --bg: #100028;
 }
 
 @font-face {
@@ -19,11 +21,31 @@
     src: url("./assets/fonts/Marhey.ttf");
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+body::-webkit-scrollbar-track {
+    /* background: rgba(var(--col-2-val), .8); */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--col-2);
+    border-radius: 10px;
+    border: 2px solid var(--bg);
+}
+
+
 
 body {
-    background-color: #16161D;
+    background-color: var(--bg);
     padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: dark !important;
+
 }
+
 
 * {
     font-family: "Alexandria";
@@ -246,4 +268,9 @@ input:focus::selection {
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+.btn-main {
+    background-color: var(--col-2) !important;
+    color: var(--bg) !important;
 }
