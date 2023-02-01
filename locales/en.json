@@ -42,5 +42,8 @@
 	"updates since release": "updates since release",
 	"lang": "en",
 	"alt lang": "fr",
-  "alt lang text": "Voir en français"
+	"alt lang text": "Voir en français",
+	"want share": "want share",
+	"want share text": "want share text",
+	"last post header": "last post header"
 }
