@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <title>Devlog - by Max Dev</title>
+
+    <%- include('./import/default_css') %>
+    <%- include('./import/default_js') %>
+    <style>
+        .danger {
+            /* background: url(assets/img/404.jpg); */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .danger h1 {
+            font-size: 10rem;
+            margin-top: 10rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <%- include('./components/navbar') %>
+    <div class="container danger center text-center">
+
+        <h1 class="text-danger h1 boldr">404</h1>
+        <h2 class="text-light text-muted">Page non trouvée</h2>
+        <h6 class="text-muted">Aucune destination vers cette route :(</h6>
+
+    </div>
+
+
+</body>
+
+</html>
