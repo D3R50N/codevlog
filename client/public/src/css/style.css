@@ -323,13 +323,18 @@ hr {
 .post-card {
     /* background: var(--bg) !important; */
     border-radius: 10px;
-    transition-duration: .2s;
+    transition-duration: .5s;
     cursor: pointer;
     /* padding: 15px; */
 }
 
-.post-card>h5 {
+.post-card>h5, .post-card>p {
     transition-duration: .2s;
+}
+
+.post-card:hover {
+    background: #0006;
+    transform: scale(.99);
 }
 
 .post-card:hover>h5 {
@@ -338,6 +343,34 @@ hr {
 
 }
 
+.post-card:hover>p {
+    color: rgba(255, 255, 255, 0.731) !important;
+}
+
 a {
     text-decoration: none !important;
+}
+
+.post-card p, .post-card h5 {
+    text-align: left;
+}
+
+.btn-primary {
+    background-color: rgb(51, 116, 181) !important;
+    border-color: rgb(51, 116, 181) !important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(51, 106, 161) !important;
+    border-color: rgb(51, 106, 161) !important;
+}
+
+.btn-success {
+    background-color: rgb(5, 150, 112) !important;
+    border-color: rgb(5, 150, 112) !important;
+}
+
+.btn-success:hover {
+    background-color: rgb(4, 130, 97) !important;
+    border-color: rgb(4, 130, 97) !important;
 }
