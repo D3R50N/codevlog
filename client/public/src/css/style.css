@@ -324,26 +324,37 @@ hr {
     /* background: var(--bg) !important; */
     border-radius: 10px;
     transition-duration: .5s;
-    cursor: pointer;
     /* padding: 15px; */
+}
+
+.posts .post-card {
+    cursor: pointer;
+
+}
+
+.post-card a {
+    text-decoration: none !important;
+    color: var(--col-2) !important;
+    font-size: smaller;
 }
 
 .post-card>h5, .post-card>p {
     transition-duration: .2s;
 }
 
-.post-card:hover {
+.posts .post-card:hover {
     background: #0006;
     transform: scale(.99);
 }
 
-.post-card:hover>h5 {
+.posts .post-card:hover>h5 {
     /* background : #7772; */
     color: var(--col-2) !important;
 
 }
 
-.post-card:hover>p {
+
+.posts .post-card:hover>p {
     color: rgba(255, 255, 255, 0.731) !important;
 }
 
@@ -373,4 +384,39 @@ a {
 .btn-success:hover {
     background-color: rgb(4, 130, 97) !important;
     border-color: rgb(4, 130, 97) !important;
+}
+
+pre code {
+    background-color: #0005;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 !important;
+
+
+}
+
+pre {
+    padding-bottom: 0 !important;
+    color: #fffa;
+}
+
+
+
+.code button {
+    background-color: #000;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 10px;
+    transition-duration: .5s;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.code button:hover {
+    background-color: #fff5;
 }

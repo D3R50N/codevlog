@@ -36,7 +36,7 @@
                         </div>
                         <div class="tab-content pt-3" id="pills-tabContent">
                             <div>
-                                <div class="row g-4 mt-2">
+                                <div class="row g-4 mt-2 posts">
                                     <% locals.posts.forEach(element => { %>
                                     <div class="col-lg-6 post-card mb-5 pt-3">
                                         <!-- <div class="card-img-top"
@@ -45,9 +45,9 @@
                                         </div> -->
                                         <div class="mb-4 ">
                                             <img src="/assets/img/dev.webp"
-                                                class="card-img-top img-fluid img-fit-center" alt="Image"
-                                                style="max-height: 150px;width:
-                                            100%; border-radius: 10px"></div>
+                                                class="card-img-top img-fluid img-fit-center" alt="Image" style="max-height: 150px;width:
+                                            100%; border-radius: 10px">
+                                        </div>
                                         <h5><%= element.title %></h5>
                                         <p class="text-muted"><%= element.content %></p>
                                     </div>
@@ -59,8 +59,96 @@
 
                     </div>
                     <!-- end row -->
+                    <div class="h4 text-muted row mt-5">
+                        <div class="col-3">Derniers devlogs</div>
+                        <div class="col-9">
+                            <hr style="width: 100%;" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg post-card mb-5 pt-3">
+
+                            <h5 class="py-3">
+                                Max Andy - Créer un serveur Node JS #1 (Http)
+                              <a href=""> ▷ lire plus</a>
+                            </h5>
+
+                            <div class="code">
+                                <button>Copier</button>
+
+                                <pre><code>
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+res.statusCode = 200;
+res.setHeader('Content-Type', 'text/plain');
+res.end('Hello World\n');
+});
+
+server.listen(3000, () => {
+console.log('Server running on port 3000');
+});
+</code></pre>
+                            </div>
+
+                            <p class="text-muted">
+                                Pour lancer le serveur, enregistrez ce code dans un fichier appelé <span
+                                    class="color-2">server.js</span> et
+                                exécutez-le en utilisant la commande node server.js. Vous pouvez ensuite accéder à votre
+                                serveur en ouvrant un navigateur et en allant à <span
+                                    class="color-2">http://localhost:3000</span>.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg post-card mb-5 pt-3">
+                        <h5 class="py-3">Max Andy - Créer un serveur Node JS #2 (Express)
+                              <a href=""> ▷ lire plus</a>
+
+                        </h5>
+
+                            <p class="text-muted">Tout d'abord, il faut installer express
+                                                            <pre>
+> npm install express
+> npm install express
+</pre>
+                            </p>
+                            <div class="code">
+                            <button>Copier</button>
+
+
+
+                            <pre><code>
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+res.send('Hello World');
+});
+
+app.listen(3000, () => {
+console.log('Server running on port 3000');
+});
+</code></pre>
+                        </div>
+
+                        <p class="text-muted">
+                            Ce code crée un serveur web en utilisant le framework <span class="color-2">Express</span>. Il
+                                importe le module Express,
+                            crée une instance Express, définit une route pour le serveur qui répond à une requête GET à
+                            la racine du site avec <span class="color-2">"Hello World"</span>, et enfin démarre le serveur en
+                                l'écoutant sur le port
+                            <span class="color-2">3000</span>. Lorsqu'un utilisateur envoie une requête à ce serveur, il
+                                recevra la réponse "Hello
+                            World".
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
